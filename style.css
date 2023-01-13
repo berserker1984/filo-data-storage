@@ -39,7 +39,7 @@ li{list-style-type: none}
 {
  
 
- body{background-image: url(./images/bg-mobile.png); background-repeat: repeat-y;}
+ body{background-image: url(./images/bg-mobile.png); background-repeat: repeat-x; }
 
 .container{margin:0; padding:0;}
 
