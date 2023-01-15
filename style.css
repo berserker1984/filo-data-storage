@@ -13,16 +13,6 @@ li{list-style-type: none}
 @font-face {
   font-family: Raleway;
   src: url(./font/Raleway-ExtraBold.ttf);}
-
-
-@font-face {
-  font-family: Open Sans;
-  src: url(https://fonts.google.com/specimen/Open+Sans);}
-
-@keyframes a-barra {
-  to {background-color: hsl(335, 100%, 65%);}
-  from {background-color:hsl(6, 100%, 80%) ;}
-  
   
 }
 
@@ -35,14 +25,15 @@ li{list-style-type: none}
 
 
 
-@media only screen and (min-width: 375px) and (max-width: 768px) 
+@media only screen and (min-width: 375px) and (max-width: 768.5px) 
+
 { 
 
 body{background-image: url(./images/bg-mobile.png); background-repeat: round;  }
 
 .container{margin:0; padding:0;}
 
-.caixa1{margin-top: -20px ; margin-bottom: 20px; border: none; height: 200px;border-top-right-radius: 100px; padding: 30px; background-color: hsl(228, 56%, 26%) }
+.caixa1{margin-top: -20px ; margin-bottom: 20px; border: none;height: 200px;border-top-right-radius: 100px; padding: 30px; background-color: hsl(228, 56%, 26%) }
 
 .caixa2{margin-bottom: 20px; border: none; height: 200px;border-radius: 15px; padding: 30px; background-color: hsl(228, 56%, 26%); }
 
@@ -70,26 +61,27 @@ body{background-image: url(./images/bg-mobile.png); background-repeat: round;  }
   
 .giga{color: hsl(243, 100%, 93%); margin-left:15px }
 .giga1{color: hsl(243, 100%, 93%);margin-right:15px }
+}
 
-
+/* ---------------------- FIM MOBILE ------------------------------------*/
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-body{background-color: hsl(229, 57%, 11%); background-image: url(./images/bg-desktop.png); background-repeat: repeat-x;  }
+body{background-color: hsl(229, 57%, 11%); }
 
 .container{margin:0; padding:0;}
 
-.caixa1{margin-top: -20px ; margin-bottom: 20px; border: none; height: 200px;border-top-right-radius: 100px; padding: 30px; background-color: hsl(228, 56%, 26%) }
+.caixa1{margin-bottom: 20px; border: none; height: 200px;border-top-right-radius: 100px; padding-top: 45px; padding-left:20px; background-color: hsl(228, 56%, 26%) }
 
-.caixa2{margin-bottom: 20px; border: none; height: 200px;border-radius: 15px; padding: 30px; background-color: hsl(228, 56%, 26%); }
+.caixa2{margin-left: 20px; margin-bottom: 20px; border: none; height: 200px;border-radius: 15px; padding: 30px; background-color: hsl(228, 56%, 26%);}
 
 .logo{margin-bottom: 20px;}
 
-.itens{display: flex; justify-content: start;padding-left: 0}
+.itens{display: flex; justify-content: start;padding: 0}
 
-.item-menu{display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; width: 65px; height: 55px; border: none; border-radius: 10px; background-color: hsl(229, 57%, 11%); margin-right: 15px}
+.item-menu{display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; width: 53px; height: 50px; border: none; border-radius: 10px; background-color: hsl(229, 57%, 11%); margin-right: 5px}
 
-.texto{margin-bottom: 20px; text-align: center; color: hsl(243, 100%, 93%)}
+.texto{margin-top: 25px; margin-bottom: 20px; text-align: left; color: hsl(243, 100%, 93%)}
 
 .caixa-barra{background-color:  hsl(229, 57%, 11%);  border: none; border-radius: 20px; height: 23px;display: flex;align-items: center;}
 
@@ -99,35 +91,37 @@ body{background-color: hsl(229, 57%, 11%); background-image: url(./images/bg-des
 
 .absoluta{position: absolute;}
 
-.caixa-gigas{font-family: Raleway; font-size: 45px; font-weight:bold; border: none; border-radius: 10%; width: 200px; height: 80px; background-color: white; display: flex;align-items: center; justify-content: center; margin: 0 auto; position: relative; top: 60px; left:20%}
+.caixa-gigas{font-family: Raleway; font-size: 45px; font-weight:bold; border: none; border-bottom-left-radius: 10px ;border-top-left-radius: 10px ;border-top-right-radius: 10px  ;width: 200px; height: 80px; background-color: white; display: flex;align-items: center; justify-content: center; margin: 0 auto; position: relative; top: -190px; left:150px}
+
+.caixa-efeito{width: 0; height:0; border-left:25px solid transparent; border-top: 25px solid white;position: relative; top: -190px; left:325px }
 
 .item2{line-height: 65px}
 .item3{line-height: 70px}
 .item4{ margin-left:10px; margin-top: 25px; font-size:15px; color:hsl(229, 7%, 55%);}
   
-.giga{color: hsl(243, 100%, 93%); margin-left:15px }
-.giga1{color: hsl(243, 100%, 93%);margin-right:15px }
+.giga{color: hsl(243, 100%, 93%); margin-left:15px; margin-top:8px }
+.giga1{color: hsl(243, 100%, 93%);margin-right:15px; margin-top:8px }
 
 }
 
-
+/* ------------------------------ INICIO DESKTOP -------------------------------------*/
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
 
-  body{background-color: hsl(229, 57%, 11%); background-image: url(./images/bg-desktop.png); background-repeat: round;  }
+body{background-attachment: fixed; background-position: 50% 250px; background-color: hsl(229, 57%, 11%); background-image: url(./images/bg-desktop.png); background-repeat: no-repeat; ba }
 
 .container{margin:0; padding:0;}
 
-.caixa1{margin-top: -20px ; margin-bottom: 20px; border: none; height: 200px;border-top-right-radius: 100px; padding: 30px; background-color: hsl(228, 56%, 26%) }
+.caixa1{margin-left: auto; margin-bottom: 20px; border: none; height: 200px;border-top-right-radius: 100px; padding-top: 45px; padding-left: 35px; background-color: hsl(228, 56%, 26%) }
 
-.caixa2{margin-bottom: 20px; border: none; height: 200px;border-radius: 15px; padding: 30px; background-color: hsl(228, 56%, 26%); }
+.caixa2{margin-left: 20px; margin-bottom: 20px; border: none; height: 200px;border-radius: 15px; padding: 30px; background-color: hsl(228, 56%, 26%);}
 
 .logo{margin-bottom: 20px;}
 
 .itens{display: flex; justify-content: start;padding-left: 0}
 
-.item-menu{display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; width: 65px; height: 55px; border: none; border-radius: 10px; background-color: hsl(229, 57%, 11%); margin-right: 15px}
+.item-menu{display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; width: 53px; height: 50px; border: none; border-radius: 10px; background-color: hsl(229, 57%, 11%); margin-right: 15px}
 
-.texto{margin-bottom: 20px; text-align: center; color: hsl(243, 100%, 93%)}
+.texto{margin-top: 25px; margin-bottom: 20px; text-align: left; color: hsl(243, 100%, 93%)}
 
 .caixa-barra{background-color:  hsl(229, 57%, 11%);  border: none; border-radius: 20px; height: 23px;display: flex;align-items: center;}
 
@@ -137,12 +131,15 @@ body{background-color: hsl(229, 57%, 11%); background-image: url(./images/bg-des
 
 .absoluta{position: absolute;}
 
-.caixa-gigas{font-family: Raleway; font-size: 45px; font-weight:bold; border: none; border-radius: 10%; width: 200px; height: 80px; background-color: white; display: flex;align-items: center; justify-content: center; margin: 0 auto; position: relative; top: 60px; left:20%}
+.caixa-gigas{font-family: Raleway; font-size: 45px; font-weight:bold; border: none; border-bottom-left-radius: 10px ;border-top-left-radius: 10px ;border-top-right-radius: 10px  ;width: 200px; height: 80px; background-color: white; display: flex;align-items: center; justify-content: center; margin: 0 auto; position: relative; top: -190px; left:270px}
+
+.caixa-efeito{width: 0; height:0; border-left:25px solid transparent; border-top: 25px solid white;position: relative; top: -190px; left:445px }
 
 .item2{line-height: 65px}
 .item3{line-height: 70px}
 .item4{ margin-left:10px; margin-top: 25px; font-size:15px; color:hsl(229, 7%, 55%);}
   
-.giga{color: hsl(243, 100%, 93%); margin-left:15px }
-.giga1{color: hsl(243, 100%, 93%);margin-right:15px }
+.giga{color: hsl(243, 100%, 93%); margin-left:15px; margin-top:8px }
+.giga1{color: hsl(243, 100%, 93%);margin-right:15px; margin-top:8px }
 }
+
